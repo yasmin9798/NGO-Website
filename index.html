@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unity in Action</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Unity in Action Logo" />
+          <span data-i18n="logo-title">Unity in Action</span>
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" data-i18n="nav-home">Home</a></li>
+          <li><a href="#about" data-i18n="nav-about">About us</a></li>
+          <li><a href="#donations" data-i18n="nav-donations">Donations</a></li>
+          <li><a href="#compaigns" data-i18n="nav-campaigns">Campaigns</a></li>
+          <li><a href="#blogs" data-i18n="nav-blogs">Blogs</a></li>
+          <li>
+            <a href="#" id="contactBtn" class="contact-highlight">
+              <span data-i18n="nav-contact">Contact Us</span>
+              <img src="contact-us.png" alt="Contact" class="contact-icon" />
+            </a>
+          </li>
+          <li>
+            <select id="languageSwitcher" class="language-switcher">
+              <option value="en">English</option>
+              <option value="hi">हिन्दी</option>
+            </select>
+          </li>
+        </ul>
+
+        <a href="#" class="donate-btn">
+          <span data-i18n="donate-btn">Donate Now</span>
+          <img src="donation.png" alt="Donate" class="donate-icon" />
+        </a>
+
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>
+            Uniting for Change,<br />Building a Brighter<br />
+            Future
+          </h1>
+          <p>
+            Join us in creating lasting impact through<br />
+            collaboration, compassion, and action
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn-primary">What we do</a>
+            <a href="#" class="btn-outline">
+              <img src="Play-icon.png" alt="Play" /> Play Video
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="overlay-img">
+            <img src="circle-child.jpg" alt="Child" />
+          </div>
+          <img
+            src="children-group.webp"
+            alt="Smiling Children"
+            class="main-img"
+          />
+          <div class="volunteer-card">
+            <h2 class="count" data-target="150">0</h2>
+            <p>Happy Volunteer</p>
+            <div class="avatars">
+              <img src="avatar1.jpeg" alt="" />
+              <img src="avatar2.jpeg" alt="" />
+              <img src="avatar3.jpeg" alt="" />
+              <img src="avatar4.jpeg" alt="" />
+              <img src="avatar5.avif" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-us">
+      <div class="about-content">
+        <div class="about-text">
+          <p class="section-label">Know About Us</p>
+          <h2>Creating a Safe Haven for<br />Children with Special Needs</h2>
+          <p class="description">
+            At Unity in Action, we are dedicated to creating a nurturing
+            environment where children with special needs receive the care,
+            support, and resources they deserve. Through personalized programs
+            and a community-driven approach, we empower every child to overcome
+            challenges, unlock their potential, and build a brighter future.
+          </p>
+          <a href="#" class="btn-primary">Learn more</a>
+        </div>
+        <div class="about-video">
+          <div class="video-wrapper">
+            <img src="about-image-children.jpg" alt="Children Learning" />
+            <div class="play-btn">
+              <img src="play-icon.png" alt="Play Video" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="donations" class="donation">
+      <div class="donation-header">
+        <p class="donation-label">Donation</p>
+        <h2>Your Donation Brings Smiles And<br />Transforms Lives</h2>
+      </div>
+
+      <div class="donation-cards">
+        <div class="donation-card">
+          <img src="education.png" alt="Education" />
+          <h3>Education</h3>
+          <p>Empowering future leaders through access to quality education.</p>
+          <a href="#">See All Campaigns ↗ </a>
+        </div>
+
+        <div class="donation-card highlighted">
+          <img src="healthcare.png" alt="Healthcare" />
+          <h3>Healthcare</h3>
+          <p>
+            Providing essential healthcare services to underserved communities.
+          </p>
+          <a href="#">See All Campaigns ↗ </a>
+        </div>
+      </div>
+
+      <div class="donation-footer">
+        <a href="#" class="btn-green">View All Category ↗ </a>
+      </div>
+    </section>
+
+    <section id="compaigns" class="campaigns">
+      <div class="campaigns-header">
+        <p class="campaigns-label">Campaigns</p>
+        <h2>Together For Change: Join Our Mission<br />To Make A Difference</h2>
+      </div>
+
+      <div class="campaigns-grid">
+        <!-- Campaign Card 1 -->
+        <div class="campaign-card">
+          <p class="category">• Pure Water</p>
+          <h3>
+            Clean Water, Bright <br />
+            Futures
+          </h3>
+          <img src="child-drink-water-compaigns.jpg" alt="Clean Water" />
+          <p class="desc">
+            Providing safe drinking water to transform lives and bring hope to
+            underprivileged children.
+          </p>
+          <div class="goal-bar">
+            <span>Goal</span>
+            <div class="progress">
+              <div class="fill" style="width: 75%"></div>
+            </div>
+            <span class="percent">75%</span>
+          </div>
+          <a href="#" class="donate-link">Donate Now! ↗</a>
+        </div>
+
+        <!-- Campaign Card 2 -->
+        <div class="campaign-card">
+          <p class="category">• Healthy Food</p>
+          <h3>
+            "Nourishing Hope, One <br />
+            Meal At A Time"
+          </h3>
+          <img src="child-eat-Food-compaigns.webp" alt="Healthy Food" />
+          <p class="desc">
+            Bringing healthy, nutritious food to underprivileged children for a
+            brighter, healthier future.
+          </p>
+          <div class="goal-bar">
+            <span>Goal</span>
+            <div class="progress">
+              <div class="fill" style="width: 75%"></div>
+            </div>
+            <span class="percent">75%</span>
+          </div>
+          <a href="#" class="donate-link">Donate Now! ↗</a>
+        </div>
+
+        <!-- Campaign Card 3 -->
+        <div class="campaign-card">
+          <p class="category">• Medical Care</p>
+          <h3>
+            Healing Lives, <br />
+            Spreading Smiles
+          </h3>
+          <img
+            src="doctor-check-child-medical-compaigns.avif"
+            alt="Medical Care"
+          />
+          <p class="desc">
+            Providing essential medical care to underprivileged children,
+            ensuring a healthier tomorrow.
+          </p>
+          <div class="goal-bar">
+            <span>Goal</span>
+            <div class="progress">
+              <div class="fill" style="width: 75%"></div>
+            </div>
+            <span class="percent">75%</span>
+          </div>
+          <a href="#" class="donate-link">Donate Now! ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="impact-section">
+      <div class="impact-content">
+        <div class="impact-text">
+          <h2>Where Your Giving Goes:<br />Transparency & Impact</h2>
+          <p class="subtitle">
+            Ensuring every donation makes a real difference—see how your <br />
+            generosity transforms lives
+          </p>
+          <ul class="impact-legend">
+            <li><span class="dot green"></span> 37% Healthy Food</li>
+            <li><span class="dot yellow"></span> 17% Pure Water</li>
+            <li><span class="dot orange"></span> 20% Medicine</li>
+            <li><span class="dot lightgreen"></span> 12% Feeding the Poor</li>
+            <li><span class="dot peach"></span> 13% Excursions</li>
+          </ul>
+        </div>
+
+        <div class="impact-chart">
+          <canvas id="donutChart" width="250" height="250"></canvas>
+        </div>
+      </div>
+    </section>
+
+    <section id="blogs" class="blog-section">
+      <div class="blog-header">
+        <p class="blog-label">From The Blog</p>
+        <h2>Our Latest News And Articles</h2>
+      </div>
+
+      <div class="blog-grid">
+        <!-- Blog Card 1 -->
+        <div class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="blog1.jpg" alt="Blog 1" />
+            <p class="blog-date">20 Jan, 2025</p>
+          </div>
+          <div class="blog-content">
+            <h3>
+              Providing Food, Clean Water, and <br />
+              Medical Care to Those Who Need.
+            </h3>
+            <p class="blog-snippet">
+              Ensuring no child suffers from hunger, thirst, or lack of medical
+              care—because every life matters.
+            </p>
+            <hr />
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <!-- Blog Card 2 -->
+        <div class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="blog2.png" alt="Blog 1" />
+            <p class="blog-date">25 Jan, 2025</p>
+          </div>
+          <div class="blog-content">
+            <h3>
+              No One Should Go Hungry, Thirsty, <br />
+              or Without Treatment
+            </h3>
+            <p class="blog-snippet">
+              Providing essential food, clean water, and life-saving treatment
+              to build a healthier future.
+            </p>
+            <hr />
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+
+        <!-- Blog Card 3 -->
+        <div class="blog-card">
+          <div class="blog-image-wrapper">
+            <img src="blog3.txt" alt="Blog 1" />
+            <p class="blog-date">30 Jan, 2025</p>
+          </div>
+          <div class="blog-content">
+            <h3>
+              Nutritious Meals, Safe Water, and <br />
+              Healthcare to Every Child in Need.
+            </h3>
+            <p class="blog-snippet">
+              Through care, support, and help, bring hope to those who need it
+              the most.
+            </p>
+            <hr />
+            <a href="#" class="read-more">Read more →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all-btn">
+        <a href="#" class="btn-green">View All Blogs ↗</a>
+      </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div class="modal" id="contactModal">
+      <div class="modal-content contact-grid">
+        <span class="close" id="closeModal">&times;</span>
+
+        <!-- Left: Contact Info -->
+        <div class="contact-info">
+          <h2>Get In Touch</h2>
+          <p>Feel free to reach out to us through any of the following ways:</p>
+
+          <div class="info-box">
+            <img src="location-icon.png" alt="Location Icon" />
+            <div>
+              <h3>Our Location</h3>
+              <p>123 Islamic Center Street, City Name, Country</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <img src="contact-us.png" alt="Phone Icon" />
+            <div>
+              <h3>Phone Number</h3>
+              <p>+91 12345 67890<br />+91 98765 43210</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <img src="email.png" alt="Email Icon" />
+            <div>
+              <h3>Email Address</h3>
+              <p>info@unityinaction.org<br />support@unityinaction.org</p>
+            </div>
+          </div>
+
+          <div class="info-box">
+            <img src="clock.png" alt="Working Hours Icon" />
+            <div>
+              <h3>Working Hours</h3>
+              <p>Mon - Fri: 9:00 AM – 6:00 PM<br />Sat: 9:00 AM – 1:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <form class="contact-form">
+            <input type="text" placeholder="Full Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="tel" placeholder="Phone Number" required />
+            <input type="text" placeholder="Subject" required />
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+        <!-- Find Us On Map -->
+        <div class="map-section">
+          <h3 class="map-heading">Find Us On Map</h3>
+
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.9835092823755!2d84.3945390759249!3d25.297884627597057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398cc6d3667c5c99%3A0x6f74c646b1e8cf04!2sKathaliya%20Madarsha!5e0!3m2!1sen!2sin!4v1720520149749!5m2!1sen!2sin"
+              class="map-frame"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <a
+              href="https://www.google.com/maps?q=Kathaliya+Madarsha"
+              target="_blank"
+              class="map-link"
+            >
+              Open in Google Maps ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Column 1: Logo and About -->
+        <div class="footer-column">
+          <div class="footer-logo">
+            <img src="logo.png" alt="Unity in Action Logo" />
+            <h3>Unity in Action</h3>
+          </div>
+          <p>
+            Empowering communities through food, water, education, and
+            compassion. Join us in creating a better tomorrow.
+          </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#donations">Donations</a></li>
+            <li><a href="#compaigns">Campaigns</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-column">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Phone:</strong>
+            <a href="tel:+911234567890">+91 12345 67890</a>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:info@unityinaction.org">info@unityinaction.org</a>
+          </p>
+          <p>
+            <strong>Address:</strong> 123 Charity Road, Kindness City, Country
+          </p>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-column">
+          <h4>Newsletter</h4>
+          <p>Stay updated on our latest campaigns and stories.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+
+          <!-- Social Media -->
+          <div class="social-icons">
+            <a href="#"><img src="facebook.png" alt="Facebook" /></a>
+            <a href="#"><img src="twitter.png" alt="Twitter" /></a>
+            <a href="#"><img src="instagram.png" alt="Instagram" /></a>
+            <a href="#"><img src="youtube.png" alt="YouTube" /></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom Note -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Unity in Action. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
